@@ -1,97 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Enes Demirel - Personal Website</title>
-        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E.Demirel</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="profile.jpeg">
+        <link rel="stylesheet" href="buttons.css">
+    
     </head>
-    <body class="dark-mode">
-        <div class="container">
-            <div class="dark-mode-toggle">
-                <button id="toggle-dark-mode">☀️ Light Mode</button>
-            </div>
-
-            <div class="profile-section">
-                <img
-                    src="documents/profile.jpg"
-                    alt="Profile Picture"
-                    class="profile-pic"
-                />
+    <body>
+        <div class="profile" style="margin-top: 2%;">
+            
+            <div class="img"></div>
+            <div class="text">
                 <h1>Enes Demirel</h1>
-                <p class="bio">
-                    Mathematics and Computer Science Major <br />
-                    at DePaul University.
-                </p>
-            </div>
-
-            <div class="buttons">
-                <a href="documents/enesdemirel.pdf" target="_blank" class="btn">
-                    <i class="fas fa-code"></i> Resume
-                </a>
-                <a href="projects/projects.html" target="_blank" class="btn">
-                    <i class="fas fa-user"></i> Projects
-                </a>
-                <a
-                    href="https://github.com/enesdemirelus"
-                    target="_blank"
-                    class="btn"
-                >
-                    <i class="fas fa-file"></i> GitHub
-                </a>
-                <a
-                    href="https://www.youtube.com/@MacMan02"
-                    target="_blank"
-                    class="btn"
-                >
-                    <i class="fas fa-envelope"></i> YouTube
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/demirelnes/"
-                    target="_blank"
-                    class="btn"
-                >
-                    <i class="fas fa-blog"></i> Linkedln
-                </a>
-                <a
-                    href="mailto:mdemire1@depaul.edu"
-                    target="_blank"
-                    class="btn"
-                >
-                    <i class="fas fa-github"></i> Contact Me
-                </a>
-
-                <a
-                    href="https://howmanyplanesareflyingrightnow.com/"
-                    target="_blank"
-                    class="btn"
-                >
-                    <i class="fas fa-github"></i> How Many Planes Are Flying
-                    Right <br />
-                    Now?
-                </a>
+                <h3>Math & CS Major, <br> Data Science Minor<br></h3>
+                <h3>
+                <a style="color: rgb(8, 128, 179);" href="https://www.depaul.edu/Pages/default.aspx">@DePaul University</a>
+                </h3>
             </div>
         </div>
-
-        <script
-            src="https://kit.fontawesome.com/a076d05399.js"
-            crossorigin="anonymous"
-        ></script>
-
-        <script>
-            const toggleDarkModeButton =
-                document.getElementById("toggle-dark-mode");
-            const body = document.body;
-
-            toggleDarkModeButton.addEventListener("click", () => {
-                body.classList.toggle("dark-mode");
-
-                if (body.classList.contains("dark-mode")) {
-                    toggleDarkModeButton.textContent = "☀️ Light Mode";
-                } else {
-                    toggleDarkModeButton.textContent = "🌙 Dark Mode";
-                }
-            });
-        </script>
+        <div class="grid">
+            <a href="enesdemirel.pdf" target="_blank" class="button resume">
+                <img src="icons/file-solid.svg" width="12px">
+                <span>Resume</span>
+            </a>
+            <a href="mailto:enesdemirelus@gmail.com" target="_blank" class="button email">
+                <img src="icons/envelope-solid.svg" width="18px"> Email
+            </a>
+            <a href="https://github.com/enesdemirelus" target="_blank" class="button github">
+                <img src="icons/github-brands.svg" width="18px" class="icon github">
+                <img src="icons/github-brands-dark.svg" width="18px" class="icon-dark github">
+                GitHub
+            </a>
+            <a href="https://www.youtube.com/@demirelnes/videos" target="_blank" class="button youtube">
+                <img src="icons/youtube-brands.svg" width="18px"> YouTube
+            </a>
+            <a href="https://www.linkedin.com/in/demirelnes/" target="_blank" class="button linkedin">
+                <img src="icons/linkedin-brands.svg" width="18px"> LinkedIn 
+            </a>
+            <a href="https://www.youtube.com/@demirelnes/videos" target="_blank" class="button projects">
+                <img src="icons/projects.png" width="18px"> Projects
+            </a>
+            
+        </div>
     </body>
 </html>
